@@ -34,7 +34,7 @@ jobs:
         run: |
           set -euo pipefail
           PR_NUMBER="${{ github.event.number }}"
-          WORKER_NAME="${{ vars.WORKER_NAME || 'rin-server' }}-pr-${PR_NUMBER}"
+          WORKER_NAME="${{ vars.WORKER_NAME || 'king-server' }}-pr-${PR_NUMBER}"
           TASK_QUEUE_NAME="${WORKER_NAME}-tasks"
 
           echo "Deleting preview worker: ${WORKER_NAME}"

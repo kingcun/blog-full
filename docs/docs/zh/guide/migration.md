@@ -57,7 +57,7 @@ GITHUB_CLIENT_SECRET  → RIN_GITHUB_CLIENT_SECRET
 
 2. **将域名绑定到 Worker**
    - 进入 Cloudflare Dashboard → Workers & Pages
-   - 选择您的 Worker (`rin-server`)
+   - 选择您的 Worker (`king-server`)
    - 点击"触发器" → "添加自定义域"
    - 输入您的域名并保存
 

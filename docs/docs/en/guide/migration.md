@@ -57,7 +57,7 @@ Starting from 0.3.0, Rin now uses Workers to host static assets instead of Cloud
 
 2. **Bind Domain to Worker**
    - Go to Cloudflare Dashboard → Workers & Pages
-   - Select your Worker (`rin-server`)
+   - Select your Worker (`king-server`)
    - Click "Triggers" → "Add Custom Domain"
    - Enter your domain and save
 

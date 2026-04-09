@@ -36,7 +36,7 @@
 #### 改进和优化
 
 - **API 客户端重构**：用自定义 API 客户端替换 Elysia/Eden
-  - 移除 @elysiajs/eden 和 rin-server 依赖
+  - 移除 @elysiajs/eden 和 king-server 依赖
   - 创建类型安全的 API 客户端
   - 简化 API 调用方式（从 treaty 模式改为直接方法调用）
   - **破坏性变更**：客户端 API 接口变更，例如 `client.post.index.get()` → `client.post.list()`

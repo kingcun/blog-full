@@ -1,5 +1,5 @@
 {
-  "name": "rin-server",
+  "name": "king-server",
   "version": "0.3.0",
   "module": "index.ts",
   "type": "module",

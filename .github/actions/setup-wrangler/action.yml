@@ -15,7 +15,7 @@ runs:
       run: |
         cat > wrangler.toml << 'EOF'
         #:schema node_modules/wrangler/config-schema.json
-        name = "rin-server"
+        name = "king-server"
         main = "server/src/_worker.ts"
         compatibility_date = "2025-03-21"
 

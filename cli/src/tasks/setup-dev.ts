@@ -37,7 +37,7 @@ export async function runSetupDev() {
   }
 
   const wranglerContent = `#:schema node_modules/wrangler/config-schema.json
-name = "${env.WORKER_NAME || "rin-server"}"
+name = "${env.WORKER_NAME || "king-server"}"
 main = "server/src/_worker.ts"
 compatibility_date = "2025-03-21"
 
@@ -72,10 +72,10 @@ database_id = "local"
 
 [[queues.producers]]
 binding = "TASK_QUEUE"
-queue = "${env.TASK_QUEUE_NAME || env.AI_SUMMARY_QUEUE_NAME || `${env.WORKER_NAME || "rin-server"}-tasks`}"
+queue = "${env.TASK_QUEUE_NAME || env.AI_SUMMARY_QUEUE_NAME || `${env.WORKER_NAME || "king-server"}-tasks`}"
 
 [[queues.consumers]]
-queue = "${env.TASK_QUEUE_NAME || env.AI_SUMMARY_QUEUE_NAME || `${env.WORKER_NAME || "rin-server"}-tasks`}"
+queue = "${env.TASK_QUEUE_NAME || env.AI_SUMMARY_QUEUE_NAME || `${env.WORKER_NAME || "king-server"}-tasks`}"
 max_batch_size = 1
 max_batch_timeout = 5
 ${env.R2_BUCKET_NAME
